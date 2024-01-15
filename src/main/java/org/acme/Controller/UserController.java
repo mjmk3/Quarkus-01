@@ -29,6 +29,6 @@ public class UserController {
 
     @GET
     public List<User> getAllUsers() {
-        return userRepository.findAll().list(); // Convert to List<User> using .list()
+        return userRepository.listAll();
     }
 }
